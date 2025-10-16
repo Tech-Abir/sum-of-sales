@@ -65,7 +65,7 @@ index.html
       const totalEl = document.getElementById('total-sales');
       const statusEl = document.getElementById('status');
       try {
-        const total = await loadAndSumCSV('data.csv');
+        const total = await loadAndSumCSV('attachments/data.csv');
         // Ensure plain numeric output for evaluator parseFloat
         totalEl.textContent = String(total);
         statusEl.textContent = 'Data loaded from data.csv';
